@@ -47,3 +47,10 @@ def arithmetic_arranger(problems, show_answers=False):
         arranged_problems += "\n" + answers.rstrip() + "\n"
     
     return arithmetic_arranger
+
+# Example usage:
+problems1 = ["32 + 698", "3801 - 2", "45 + 43", "123 + 49"]
+print(arithmetic_arranger(problems1))
+
+problems2 = ["32 + 8", "1 - 3801", "9999 + 9999", "523 - 49"]
+print(arithmetic_arranger(problems2, True))
