@@ -10,6 +10,7 @@ def arithmetic_arranger(problems, show_answers=False):
     dashes = ""
     answers = ""
     
-    
+    for problem in problems:
+        
     
     return arithmetic_arranger
