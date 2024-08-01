@@ -14,6 +14,10 @@ def arithmetic_arranger(problems, show_answers=False):
         # Split the problem into operands and operator
         operand1, operator, operand2 = problem.split()
         
+        # Check the operator
+        if operator not in ['+', '-']:
+            return "Error: Operator must be '+' or '-'."
+        
         
     
     return arithmetic_arranger
