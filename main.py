@@ -29,6 +29,9 @@ def arithmetic_arranger(problems, show_answers=False):
         # Calculate the width of the row for the current problem
         row_width = max(len(operand1), len(operand2)) + 2
         
+        # Create the formatted rows
+        line1 += operand1.rjust(row_width) + "    "
+        line2 += operator + operand2.rjust(row_width - 1) + "    "
         
         
     
