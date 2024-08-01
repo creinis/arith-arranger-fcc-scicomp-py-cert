@@ -32,7 +32,7 @@ def arithmetic_arranger(problems, show_answers=False):
         # Create the formatted rows
         line1 += operand1.rjust(row_width) + "    "
         line2 += operator + operand2.rjust(row_width - 1) + "    "
-        
+        dashes += "-" * row_width + "    "
         
     
     return arithmetic_arranger
