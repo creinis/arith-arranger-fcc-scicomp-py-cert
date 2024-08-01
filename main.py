@@ -42,6 +42,8 @@ def arithmetic_arranger(problems, show_answers=False):
     # Combine the rows and add a newline
     arranged_problems = "\n" + line1.rstrip() + "\n" + line2.rstrip() + "\n" + dashes.rstrip()
     
-    
+    # Add answers if needed
+    if show_answers:
+        arranged_problems += "\n" + answers.rstrip() + "\n"
     
     return arithmetic_arranger
