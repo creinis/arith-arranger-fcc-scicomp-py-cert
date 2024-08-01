@@ -26,6 +26,9 @@ def arithmetic_arranger(problems, show_answers=False):
         if len(operand1) > 4 or len(operand2) > 4:
             return "Error: Numbers cannot be more than four digits."
         
+        # Calculate the width of the row for the current problem
+        row_width = max(len(operand1), len(operand2)) + 2
+        
         
         
     
