@@ -34,5 +34,11 @@ def arithmetic_arranger(problems, show_answers=False):
         line2 += operator + operand2.rjust(row_width - 1) + "    "
         dashes += "-" * row_width + "    "
         
+        # Calculate the answer if needed
+        if show_answers:
+            result = str(eval(problem))
+            answers += result.rjust(row_width) + "    "
+    
+    
     
     return arithmetic_arranger
