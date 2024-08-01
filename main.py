@@ -22,6 +22,11 @@ def arithmetic_arranger(problems, show_answers=False):
         if not operand1.isdigit() or not operand2.isdigit():
             return "Error: Numbers must only contain digits."
         
+        # Check the length of operands
+        if len(operand1) > 4 or len(operand2) > 4:
+            return "Error: Numbers cannot be more than four digits."
+        
+        
         
     
     return arithmetic_arranger
