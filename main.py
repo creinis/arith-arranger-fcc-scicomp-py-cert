@@ -11,6 +11,9 @@ def arithmetic_arranger(problems, show_answers=False):
     answers = ""
     
     for problem in problems:
+        # Split the problem into operands and operator
+        operand1, operator, operand2 = problem.split()
+        
         
     
     return arithmetic_arranger
